@@ -1,0 +1,12 @@
+#include <vector>
+#include<iostream>
+std::vector<int> countBy(int x,int n){
+  std::vector<int> result;
+    result.reserve(n); // Reserve space for n elements to avoid multiple allocations
+
+    for (int i = 1; i <= n; ++i) {
+        result.push_back(x * i);
+    }
+
+    return result;
+}
